@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Clase2-claculadora</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar container">
+              <picture class="navbar__logo">
+                      <img src="./img/branding/isotype.svg" alt="Isologotipo"></a>
+              </picture>
+             
+    </header> 
+<main>            
+    <h1>Calculadora</h1>
+    <h2>Por Liliana Quintana</h2>
+    <div class="calculadora1">
+
+        <form name="calc">
+            <!--2 campos inputs para los operandos con return solonumeros logre que solo numeros -->
+            <input type="Text" id="operando1" name="operando1" value="" size="12" placeholder="sólo números y un decimal" oninput="limitDecimalPlaces(event, 2)" onkeypress="return isNumberKey(event)"  > <br>
+            <input type="Text" id="operando2" name="operando2" value="" size="12" placeholder="sólo números y un decimal" oninput="limitDecimalPlaces(event, 2)" onkeypress="return isNumberKey(event)"  > <br>
+            <!--4 botones de operadores básicos (suma, resta, multiplicación, división)  -->
+            <input type="Button" name="" value=" + " onclick="calcula ('+')">
+            <input type="Button" name="" value=" - " onclick="calcula ('-')">
+            <input type="Button" name="" value=" X " onclick="calcula ('*')">
+            <input type="Button" name="" value=" / " onclick="calcula ('/')">
+             <!--Al realizar la cuenta se deberá actualizar el campo resultado. modificando  -->
+            <input type="Text" id="resultado"  name="resultado" value="" size="12">
+            <br>
+            <!-- Esto no lo pidio, pero lo puse para borrar los campos una vez utilizados  -->
+            <input type="button" value="borrar"onclick="borrarcalcula1()">
+        </form>
+        
+
+    </div>
+
+    <h3>Otra opción</h3>
+   
+<div class="calculadora2">
+        <input type="text" id="pantalla" readonly>
+        <br>
+        <input type="button" value="1"onclick="agregar('1')">
+        <input type="button" value="2"onclick="agregar('2')">
+        <input type="button" value="3"onclick="agregar('3')">
+        <input type="button" value="+"onclick="agregar('+')">
+        <br>
+        <input type="button" value="4"onclick="agregar('4')">
+        <input type="button" value="5"onclick="agregar('5')">
+        <input type="button" value="6"onclick="agregar('6')">
+        <input type="button" value="-"onclick="agregar('-')">
+        <br>
+        <input type="button" value="7"onclick="agregar('7')">
+        <input type="button" value="8"onclick="agregar('8')">
+        <input type="button" value="9"onclick="agregar('9')">
+        <input type="button" value="*"onclick="agregar('*')">
+        <br>
+        <input type="button" value="0"onclick="agregar('0')">
+        <input type="button" value="."onclick="agregar('.')">
+        <input type="button" value="/"onclick="agregar('/')">
+        <input type="button" value="="onclick="calcular()">
+        <br>
+        <input type="button" value="C"onclick="borrarcalcula2()">
+    </div>
+</main> 
+    
+<script src="./script.js"></script>
+
+<footer class="footer">
+
+        <div class="redes">
+          <a class= h3footer><b>Síguenos en</b></a>
+      </div>
+      <div class="contfooter">
+        <a href="https://facebook.com/" class="facebook text-white" target="_blank">
+            <i class="fa-brands fa-square-facebook"></i>
+        </a>
+        <a href="https://instagram.com/" class="instagram text-white" target="_blank">
+            <i class="fa-brands fa-square-instagram"></i>
+        </a>
+        <a href="https://youtube.com/" class="youtube text-white" target="_blank">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://twitter.com/" class="twitter text-white" target="_blank">
+            <i class="fa-brands fa-square-twitter"></i>
+        </a>
+        <a href="https://whatsapp.com/" class="whatsapp text-white" target="_blank">
+            <i class="fa-brands fa-square-whatsapp"></i>
+        </a>
+        <a href="https://linkedin.com/" class="linkedin text-white" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://google.com/maps/" class="map text-white" target="_blank">
+            <i class="fa-solid fa-map-location-dot"></i>
+        <a href="https://msn.com/" class="correo text-white" target="_blank">
+            <i class="fa-solid fa-envelope"></i>
+    
+        </a>
+      </div>
+      &copy; <b>Alumna Liliana todos los derechos reservados 2023</b>
+
+     
+</footer>
+</body>
+
+</html>
