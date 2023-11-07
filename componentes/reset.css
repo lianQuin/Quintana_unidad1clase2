@@ -2,20 +2,20 @@
     /*Colors*/
 
     
-    --secondary-solid: #1d84b5;
+    --secondary-solid: #2c1db5;
     --secondary-900: rgba(29, 133, 181, 0.9);
     --secondary-500: #40c8c1;
     --secondary-300: rgba(29, 133, 181, 0.3);
     
-    --dark-solid: #1f1f1f;
-    --dark-900: rgba(31, 31, 31, 0.9);
-    --dark-500: rgba(31, 31, 31, 0.5);
-    --dark-300: rgba(31, 31, 31, 0.3);
+    --dark-solid: #ff0e0e;
+    --dark-900: rgba(212, 26, 26, 0.9);
+    --dark-500: rgb(241, 60, 60);
+    --dark-300: rgba(31, 31, 31, 0.973);
 
     --dark-bg-solid: #30343f;
     --light-bg-solid: #fafaff;
     --light-font-solid: #FFF;
-    --light-color:#c9c9c9;
+    --light-color:rgb(201, 201, 201);
 
     /*Typography*/
     --base-font: 'Inter', sans-serif;

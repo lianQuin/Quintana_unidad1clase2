@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./componentes/style.css">
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
      <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -16,11 +16,26 @@
     <header>
         <nav class="navbar container">
               <picture class="navbar__logo">
-                      <img src="./img/branding/isotype.svg" alt="Isologotipo"></a>
+                      <img src="./img/branding/isotype.svg" alt="logotipo"></a>
               </picture>
              
     </header> 
-<main>            
+<main>
+    <section class="hero">
+        <p><strong> Ejercicio 1</strong></p>
+          <p> Tengo desarrollada la siguiente función en javascript
+            function suma (a,b,callback){
+            let c = a +b;
+            callback();
+            }
+            ¿Que es el tercer parámetro recibido?
+            ¿En que casos es obligatorio desarrollar este tipo de funciones?
+            Realizar un llamado a la función de ejemplo.</p>
+            <p><strong>.</strong>Un callback es una función que se pasa como argumento a otra función y se ejecuta después de que la función principal haya terminado de ejecutarse. En el caso de una calculadora, un callback podría ser una función que se ejecuta después de que se presiona el botón de igualdad (=) y que realiza una operación adicional con los números ingresados. Por ejemplo, si se ingresan los números 2 y 3 y se presiona el botón de suma (+), la función principal sumaría los dos números y luego llamaría al callback para mostrar el resultado en la pantalla de la calculadora.
+
+             En JavaScript, los callbacks son comunes en operaciones asincrónicas, como solicitudes de red o animaciones, donde se necesita esperar a que se complete una tarea antes de continuar con otra. Los callbacks también se utilizan en la programación de eventos, donde se ejecutan funciones en respuesta a eventos del usuario, como hacer clic en un botón o mover el mouse</p>
+    </section>
+    
     <h1>Calculadora</h1>
     <h2>Por Liliana Quintana</h2>
     <div class="calculadora1">
@@ -44,31 +59,31 @@
 
     </div>
 
-    <h3>Otra opción</h3>
+    <h2>Otra opción</h2>
    
 <div class="calculadora2">
         <input type="text" id="pantalla" readonly>
         <br>
+        <input type="button" value="0"onclick="agregar('0')">
         <input type="button" value="1"onclick="agregar('1')">
         <input type="button" value="2"onclick="agregar('2')">
         <input type="button" value="3"onclick="agregar('3')">
-        <input type="button" value="+"onclick="agregar('+')">
-        <br>
         <input type="button" value="4"onclick="agregar('4')">
         <input type="button" value="5"onclick="agregar('5')">
         <input type="button" value="6"onclick="agregar('6')">
-        <input type="button" value="-"onclick="agregar('-')">
-        <br>
         <input type="button" value="7"onclick="agregar('7')">
         <input type="button" value="8"onclick="agregar('8')">
         <input type="button" value="9"onclick="agregar('9')">
+
         <input type="button" value="*"onclick="agregar('*')">
-        <br>
-        <input type="button" value="0"onclick="agregar('0')">
+        <input type="button" value="-"onclick="agregar('-')">
+        <input type="button" value="+"onclick="agregar('+')">
+        
         <input type="button" value="."onclick="agregar('.')">
         <input type="button" value="/"onclick="agregar('/')">
-        <input type="button" value="="onclick="calcular()">
         <br>
+        <input type="button" value="="onclick="calcular()">
+        
         <input type="button" value="C"onclick="borrarcalcula2()">
     </div>
 </main> 
@@ -106,7 +121,7 @@
     
         </a>
       </div>
-      &copy; <b>Alumna Liliana todos los derechos reservados 2023</b>
+      &copy; <b>Alumna Liliana Quintana todos los derechos reservados 2023</b>
 
      
 </footer>
