@@ -2,10 +2,10 @@
 
 Ejercicio clase2
 
-ARGENTINA PROGRAMA 4.0 - REACT JS Tecnologias a utilizar: .HTML .CSS .JS Enunciado:
+ARGENTINA PROGRAMA 4.0 - REACT JS Tecnologias a utilizar: .HTML .CSS .JS 
 Aqui podras visualizarlo mediante pages:
 https://lianquin.github.io/Quintana_unidad1clase2/
-
+Enunciado:
 ☝🏾Ejercicio 1
 Tengo desarrollada la siguiente función en javascript
 function suma (a,b,callback){
