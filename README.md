@@ -3,7 +3,8 @@
 Ejercicio clase2
 
 ARGENTINA PROGRAMA 4.0 - REACT JS Tecnologias a utilizar: .HTML .CSS .JS Enunciado:
-
+Aqui podras visualizarlo mediante pages:
+https://lianquin.github.io/Quintana_unidad1clase2/
 
 ☝🏾Ejercicio 1
 Tengo desarrollada la siguiente función en javascript
