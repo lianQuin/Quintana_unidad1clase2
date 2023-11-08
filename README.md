@@ -14,7 +14,8 @@ callback();
 ¿Que es el tercer parámetro recibido?
 ¿En que casos es obligatorio desarrollar este tipo de funciones?
 Realizar un llamado a la función de ejemplo.
-Ejercicio 2
+
+✌🏾Ejercicio 2
 Desarrollador una calculadora que tenga:
 ● 2 campos inputs para los operadnos
 ● 4 botones de operadores básicos (suma, resta, multiplicación, división)
